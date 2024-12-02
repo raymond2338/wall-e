@@ -98,7 +98,7 @@ export default function WallE() {
           '1. Overview/details of the pitch:'
         ])
       } else if (command === `${investors.length + 2}`) {
-        window.open('https://www.google.com', '_blank')
+        window.open('https://x.ai', '_blank')
       } else {
         setOutput((prev) => [...prev, `Invalid selection. Please choose a number between 1 and ${investors.length + 2}.`])
       }
