@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import OpenAI from 'openai'
 import { investors } from '../../../lib/investors'
 
-const XAI_API_KEY = "xai-xknSSxQNfsVa10hUKh0Da8jhCVhkhP1nxmbvGd9iPwZyB8gZHAwL2lSfz3pjth42j8EoO0zJnAOfpeyf"
+const XAI_API_KEY = process.env.API_KEY;
 
 if (!XAI_API_KEY) {
   throw new Error('XAI_API_KEY is not set in the environment variables')
